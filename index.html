@@ -1,1 +1,86 @@
-En travaux!
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuno Marcelino — Apps | Site développeur</title>
+  <meta name="description" content="Site développeur officiel de Nuno Ricardo Marcelino. Infos apps, support, et conformité app-ads.txt.">
+  <meta property="og:title" content="Nuno Marcelino — Apps">
+  <meta property="og:description" content="Site développeur officiel de Nuno Ricardo Marcelino.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nunomars.github.io/">
+  <meta name="robots" content="index,follow">
+  <style>
+    :root { --fg:#0f172a; --muted:#475569; --bg:#f8fafc; --card:#ffffff; --accent:#2563eb; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; color:var(--fg); background:var(--bg); }
+    header { padding:32px 16px; border-bottom:1px solid #e2e8f0; background:linear-gradient(180deg,#eef2ff,#ffffff); }
+    .wrap { max-width: 960px; margin:0 auto; }
+    .title { font-size: clamp(28px, 4vw, 40px); margin:0 0 6px; }
+    .subtitle { color:var(--muted); margin:0; }
+    nav a { margin-right:16px; color:var(--accent); text-decoration:none; }
+    main { padding:32px 16px; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); }
+    .card { background:var(--card); border:1px solid #e2e8f0; border-radius:16px; padding:20px; box-shadow:0 2px 12px rgba(0,0,0,.03); }
+    .card h3 { margin:0 0 8px; font-size:18px; }
+    footer { margin-top:40px; padding:24px 16px; border-top:1px solid #e2e8f0; color:var(--muted); }
+    code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .badge { display:inline-block; padding:4px 8px; background:#eff6ff; color:#1d4ed8; border-radius:999px; font-size:12px; }
+    a.button { display:inline-block; border:1px solid #1d4ed8; color:#1d4ed8; padding:10px 14px; border-radius:12px; text-decoration:none; }
+    a.button:hover { background:#1d4ed8; color:#fff; }
+    .muted { color:var(--muted); }
+  </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Organization", "name": "Nuno Marcelino — Apps", "url": "https://nunomars.github.io", "email": "nuno.ricardo.mars@gmail.com", "sameAs": ["https://play.google.com/store/apps/developer?id=Nuno+Ricardo+Marcelino"]}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1 class="title">Nuno Marcelino — Apps</h1>
+      <p class="subtitle">Site développeur officiel — conformité publicitaire (app-ads.txt), support et infos produits.</p>
+      <nav>
+        <a href="./">Accueil</a>
+        <a href="./contact.html">Contact & Support</a>
+        <a href="./privacy.html">Confidentialité</a>
+        <a href="./app-ads.txt" class="mono">app-ads.txt</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="grid">
+      <div class="card">
+        <h3>Conformité publicitaire</h3>
+        <p>Ce site héberge le fichier <span class="mono">/app-ads.txt</span> à la racine du domaine pour la vérification AdMob et partenaires.</p>
+        <a class="button" href="./app-ads.txt">Voir app-ads.txt</a>
+      </div>
+      <div class="card">
+        <h3>Ma Carte de Tarot <span class="badge">Android</span></h3>
+        <p class="muted">Application de tirage et d’interprétation du Tarot, avec significations détaillées et IAP.</p>
+        <p><a class="button" href="https://play.google.com/store/apps/details?id=org.tarot.macartedetarot" target="_blank" rel="noopener">Voir sur Google Play</a></p>
+      </div>
+      <div class="card">
+        <h3>Support & contact</h3>
+        <p>Besoin d’aide, d’un remboursement ou de signaler un bug ? Contacte-nous.</p>
+        <p><a class="button" href="./contact.html">Ouvrir le support</a></p>
+      </div>
+    </section>
+
+    <section style="margin-top:24px" class="card">
+      <h3>Intégration pour développeurs</h3>
+      <p>Si vous êtes une régie publicitaire ou un partenaire, utilisez le fichier <span class="mono">app-ads.txt</span> ci-dessus. Pour les échanges techniques, contactez: <a href="mailto:nuno.ricardo.mars@gmail.com">nuno.ricardo.mars@gmail.com</a>.</p>
+      <pre class="mono">GET https://nunomars.github.io/app-ads.txt  HTTP/1.1
+Host: nunomars.github.io
+Accept: text/plain</pre>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div>© 2025-11-10 Nuno Marcelino — Apps. Tous droits réservés.</div>
+      <div>Hébergé via GitHub Pages.</div>
+    </div>
+  </footer>
+</body>
+</html>
+
