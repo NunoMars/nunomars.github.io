@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nunomars.github.io/sitemap.xml
